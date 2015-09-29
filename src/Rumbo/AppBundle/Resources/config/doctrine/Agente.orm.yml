@@ -1,0 +1,22 @@
+Rumbo\AppBundle\Entity\Agente:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombre:
+            type: string
+            length: 255
+
+        nombrecomercial:
+            type: string
+            length: 255
+
+        anotacion:
+            type: text
+
+    lifecycleCallbacks: {  }

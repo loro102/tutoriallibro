@@ -1,0 +1,8 @@
+oferta_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: OfertaBundle:Default:index }
+
+_paginas_estaticas:
+    resource: routing_paginas.yml
+    prefix: /pagina
+    defaults: { _controller: FrameworkBundle:Template:template}

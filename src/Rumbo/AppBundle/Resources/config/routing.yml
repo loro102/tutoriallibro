@@ -1,0 +1,3 @@
+rumbo_app_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: RumboAppBundle:Default:index }
