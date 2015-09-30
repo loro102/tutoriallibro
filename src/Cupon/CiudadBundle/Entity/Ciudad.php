@@ -1,12 +1,9 @@
 <?php
-// src/Cupon/TiendaBundle/Entity/Ciudad.php
+// src/Cupon/CiudadBundle/Entity/Ciudad.php
 namespace Cupon\CiudadBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Validator\Constraints as Assert;
-
 /**
  * @ORM\Entity
- * @ORM\Table(name="ProyectoCupon_Ciudad")
  */
 class Ciudad
 {
@@ -16,17 +13,12 @@ class Ciudad
      * @ORM\GeneratedValue
      */
     protected $id;
-
-    /** @ORM\Column(type"string",length=100)
-     * * @Assert\NotBlank
-     */
+    /** @ORM\Column(type="string", length=100) */
     protected $nombre;
-
-    /** @ORM\Column(type"string",length=100)
-     *   * @Assert\NotBlank
-     */
+    /** @ORM\Column(type="string", length=100) */
     protected $slug;
 
+    // ...
     public function getId()
     {
         return $this->id;
@@ -51,6 +43,4 @@ class Ciudad
     {
         return $this->getNombre();
     }
-
 }
-?>
