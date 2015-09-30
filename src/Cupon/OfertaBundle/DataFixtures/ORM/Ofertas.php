@@ -11,6 +11,7 @@ class Ofertas implements FixtureInterface
         for ($i = 0; $i < 400; $i++) {
             $entidad = new Oferta();
             $entidad->setNombre('Oferta '.$i);
+            $entidad->setDescripcion('oferta superoferta '.$i);
             $entidad->setPrecio(rand(1, 100));
             $entidad->setFechaPublicacion(new \DateTime());
 // ...

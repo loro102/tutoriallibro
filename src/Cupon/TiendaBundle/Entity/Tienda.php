@@ -12,19 +12,19 @@ class Tienda
  * @ORM\GeneratedValue
  */
     protected $id;
-    /** @ORM\Column(type="string", length=100) */
+    /** @ORM\Column(type="string", length=100,nullable=true) */
     protected $nombre;
-    /** @ORM\Column(type="string", length=100) */
+    /** @ORM\Column(type="string", length=100,nullable=true) */
     protected $slug;
-    /** @ORM\Column(type="string", length=10) */
+    /** @ORM\Column(type="string", length=10,nullable=true) */
     protected $login;
-    /** @ORM\Column(type="string", length=255) */
+    /** @ORM\Column(type="string", length=255,nullable=true) */
     protected $password;
-    /** @ORM\Column(type="string", length=255) */
+    /** @ORM\Column(type="string", length=255,nullable=true) */
     protected $salt;
-    /** @ORM\Column(type="text") */
+    /** @ORM\Column(type="text",nullable=true) */
     protected $descripcion;
-    /** @ORM\Column(type="text") */
+    /** @ORM\Column(type="text",nullable=true) */
     protected $direccion;
     /** @ORM\ManyToOne(targetEntity="Cupon\CiudadBundle\Entity\Ciudad") */
     protected $ciudad;
